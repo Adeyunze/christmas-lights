@@ -1,0 +1,309 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #3e3e3e;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 40px 200px;
+}
+
+.container div {
+  width: 50px;
+  height: 50px;
+  background-color: #ededed;
+  border-radius: 50%;
+  position: relative;
+  top: 15px;
+}
+
+.container div::before {
+  position: absolute;
+  content: '';
+  height: 15px;
+  width: 15px;
+  left: 17.5px;
+  top: -15px;
+  margin: 0;
+  padding: 0;
+  display: block;
+  background: black;
+  border-radius: 2px;
+  border-bottom: 2px solid #61516b;
+}
+
+.container div::after {
+  position: absolute;
+  content: '';
+  top: -50px;
+  left: 50%;
+  height: 50px;
+  width: 100px;
+  border-bottom: 2px #202020 solid;
+  border-radius: 50%;
+}
+
+.container div:last-child::after {
+  content: '';
+  border: none;
+}
+
+.container .gras {
+  background-color: #f956f9;
+  -webkit-animation: glow-gras 1s infinite;
+          animation: glow-gras 1s infinite;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
+.container .yellow {
+  background-color: #FFFF37;
+  -webkit-animation: glow-yellow 1s infinite;
+          animation: glow-yellow 1s infinite;
+}
+
+.container .orange {
+  background-color: #FCAE1F;
+  -webkit-animation: glow-orange 1s infinite;
+          animation: glow-orange 1s infinite;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
+.container .green {
+  background-color: #24FF24;
+  -webkit-animation: glow-green 1s infinite;
+          animation: glow-green 1s infinite;
+}
+
+.container .purple {
+  background-color: #B600B6;
+  -webkit-animation: glow-purple 1s infinite;
+          animation: glow-purple 1s infinite;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
+.container .red {
+  background-color: #FF3737;
+  -webkit-animation: glow-red 1s infinite;
+          animation: glow-red 1s infinite;
+}
+
+.container .blue {
+  background-color: #2424FF;
+  -webkit-animation: glow-blue 1s infinite;
+          animation: glow-blue 1s infinite;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
+h1 {
+  color: white;
+  font-family: sans-serif;
+  font-size: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 50vh;
+  font-weight: 600;
+}
+
+@-webkit-keyframes glow-blue {
+  0%,
+  100% {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  50% {
+    -webkit-box-shadow: 0 0 20px 5px #4949FF;
+            box-shadow: 0 0 20px 5px #4949FF;
+  }
+}
+
+@keyframes glow-blue {
+  0%,
+  100% {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  50% {
+    -webkit-box-shadow: 0 0 20px 5px #4949FF;
+            box-shadow: 0 0 20px 5px #4949FF;
+  }
+}
+
+@-webkit-keyframes glow-red {
+  0%,
+  100% {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  50% {
+    -webkit-box-shadow: 0 0 20px 5px #FF6D6D;
+            box-shadow: 0 0 20px 5px #FF6D6D;
+  }
+}
+
+@keyframes glow-red {
+  0%,
+  100% {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  50% {
+    -webkit-box-shadow: 0 0 20px 5px #FF6D6D;
+            box-shadow: 0 0 20px 5px #FF6D6D;
+  }
+}
+
+@-webkit-keyframes glow-gras {
+  0%,
+  100% {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  50% {
+    -webkit-box-shadow: 0 0 20px 5px #E03BE0;
+            box-shadow: 0 0 20px 5px #E03BE0;
+  }
+}
+
+@keyframes glow-gras {
+  0%,
+  100% {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  50% {
+    -webkit-box-shadow: 0 0 20px 5px #E03BE0;
+            box-shadow: 0 0 20px 5px #E03BE0;
+  }
+}
+
+@-webkit-keyframes glow-yellow {
+  0%,
+  100% {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  50% {
+    -webkit-box-shadow: 0 0 20px 5px #ffff43;
+            box-shadow: 0 0 20px 5px #ffff43;
+  }
+}
+
+@keyframes glow-yellow {
+  0%,
+  100% {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  50% {
+    -webkit-box-shadow: 0 0 20px 5px #ffff43;
+            box-shadow: 0 0 20px 5px #ffff43;
+  }
+}
+
+@-webkit-keyframes glow-orange {
+  0%,
+  100% {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  50% {
+    -webkit-box-shadow: 0 0 20px 5px #FCBB42;
+            box-shadow: 0 0 20px 5px #FCBB42;
+  }
+}
+
+@keyframes glow-orange {
+  0%,
+  100% {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  50% {
+    -webkit-box-shadow: 0 0 20px 5px #FCBB42;
+            box-shadow: 0 0 20px 5px #FCBB42;
+  }
+}
+
+@-webkit-keyframes glow-green {
+  0%,
+  100% {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  50% {
+    -webkit-box-shadow: 0 0 20px 5px #6DFF6D;
+            box-shadow: 0 0 20px 5px #6DFF6D;
+  }
+}
+
+@keyframes glow-green {
+  0%,
+  100% {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  50% {
+    -webkit-box-shadow: 0 0 20px 5px #6DFF6D;
+            box-shadow: 0 0 20px 5px #6DFF6D;
+  }
+}
+
+@-webkit-keyframes glow-purple {
+  0%,
+  100% {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  50% {
+    -webkit-box-shadow: 0 0 20px 5px #ED00ED;
+            box-shadow: 0 0 20px 5px #ED00ED;
+  }
+}
+
+@keyframes glow-purple {
+  0%,
+  100% {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  50% {
+    -webkit-box-shadow: 0 0 20px 5px #ED00ED;
+            box-shadow: 0 0 20px 5px #ED00ED;
+  }
+}
+/*# sourceMappingURL=style.css.map */
